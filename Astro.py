@@ -36,9 +36,10 @@ with st.container():
              - The latest Astronomy related news.
               - Cool things related to science 
              - Other stuff i thought was cool enough to be included.
-             - Along with a self built AI Chatbot "Alsephina.ai" which can help you with almost 😉
-              any question you may have.
+             - Along with a self built AI Chatbot "Alsephina.ai" , which can help you with almost 😉
+              any question you may have which will be added very soon.
               The goal will always be to make learning as fun as possible.
+              - ( This site was made by one person alone so it still may have issues which will be fixed asap)
               """
             )
 
@@ -283,15 +284,17 @@ st.title("Our Solar System")
 image_column, text_column  = st.columns((15,1))
 with image_column:
     st.image(img_planet_pic)
-    st.write("---------")
-    st.subheader("In This section you can find some basic facts and features about the planets of the Solar System:")
-    st.write("---------")
-    st.subheader("Mercury")
-image_column, text_column = st.columns((4, 2))
+    # ---- Mercury ----
+    with st.container():
+        st.write("####")
+        st.write("---------")
+image_column, text_column = st.columns((2, 1))
 with image_column:
     st.image(Mercury_in_true_color)
     with text_column:
-       st.write(
+     st.write("------")
+     st.subheader("Mercury")
+    st.write(
     """ Mercury is the first planet from the Sun and the smallest planet in the Solar System. It is a terrestrial planet with a heavily cratered surface due to the planet having no geological activity and an extremely tenuous atmosphere (called an exosphere).
      Despite being the smallest planet in the Solar System with a mean diameter of 4,880 km (3,030 mi), 38% of that of Earth's, Mercury is dense enough to have roughly the same surface gravity as Mars. Mercury has a dynamic magnetic field with a strength about 1% of that of Earth's and has no natural satellites.
     According to current theories, Mercury may have a solid silicate crust and mantle overlying a solid outer core, a deeper liquid core layer, and a solid inner core. Having almost no atmosphere to retain heat, Mercury has surface temperatures that change wildly during the day, ranging from 100 K (−173 °C; −280 °F) at night to 700 K (427 °C; 800 °F) during sunlight across the equator regions. 
@@ -332,15 +335,14 @@ helium
 Trace amounts of iron, aluminium, argon, dinitrogen, dioxygen, carbon dioxide, water vapor, xenon, krypton, and neon
 """
 
+         )
 
-       )
-
-       # ---- Venus ----
-       with st.container():
-           st.write("####")
-           st.write("---------")
-    image_column, text_column = st.columns((2, 1))
-    with image_column:
+  # ---- Venus ----
+with st.container():
+ st.write("####")
+ st.write("---------")
+image_column, text_column = st.columns((2, 1))
+with image_column:
         st.image(venus2_pic)
         with text_column:
             st.write("------")
@@ -389,21 +391,20 @@ Fahrenheit		867 °F
 Trace carbonyl sulfide
 Trace hydrogen chloride
 Trace hydrogen fluoride
-               """
-               )
          
-
-    #---- Earth ----
-    with st.container():
-        st.write("####")
-        st.write("---------")
-image_column, text_column = st.columns((2, 1))
-with image_column:
- st.image(earth_pic)
- with text_column:
-     st.write("------")
-     st.subheader("Earth")
-     st.write(
+               """
+)
+    # ---- EARTH ----
+        with st.container():
+         st.write("####")
+         st.write("---------")
+        image_column, text_column = st.columns((2, 1))
+        with image_column:
+         st.image(earth_pic)
+        with text_column:
+           st.write("------")
+        st.subheader("Earth")
+        st.write(
      """Earth is the third planet from the Sun and the only astronomical object known to harbor life. This is enabled by Earth being a water world, the only one in the Solar System sustaining liquid surface water.
       Almost all of Earth's water is contained in its global ocean, covering 70.8% of Earth's surface. The remaining 29.2% of Earth's surface is land, most of which is located in the form of continental landmasses within one hemisphere, Earth's land hemisphere. Most of Earth's land is somewhat humid and covered by vegetation, while large sheets of ice at Earth's polar deserts retain more water than Earth's groundwater, lakes, rivers and atmospheric water together. Earth's land is part of Earth's crust, consisting of several slowly moving tectonic plates, which interact to produce mountain ranges, volcanoes, and earthquakes.
       Inside Earth's crust is a liquid outer core that generates the magnetosphere, deflecting most of the destructive solar winds and cosmic radiation.
@@ -443,17 +444,17 @@ Composition by volume:
       """
 
  )
-     # ---- Mars ----
-     with st.container():
-         st.write("####")
-         st.write("---------")
+        # ---- Mars ----
+with st.container():
+    st.write("####")
+    st.write("---------")
 image_column, text_column = st.columns((2, 1))
 with image_column:
     st.image(mars_pic)
-    with text_column:
-        st.write("------")
-        st.subheader("Mars")
-        st.write(
+with text_column:
+    st.write("------")
+st.subheader("Mars")
+st.write(
             """ Mars is the fourth planet and the furthest terrestrial planet from the Sun.
              The reddish color of its surface is due to finely grained iron(III) oxide dust in the soil, giving it the nickname "the Red Planet".
             Mars's radius is second smallest among the planets in the Solar System at 3,389.5 km (2,106 mi). The Martian dichotomy is visible on the surface: on average, the terrain on Mars's northern hemisphere is flatter and lower than its southern hemisphere. Mars has a thin atmosphere made primarily of carbon dioxide and two irregularly shaped natural satellites: Phobos and Deimos.
@@ -493,17 +494,17 @@ Surface pressure:	0.636 (0.4–0.87) kPa
 0.0210% water vapor
 """
         )
-        # ---- Jupiter ----
-        with st.container():
-            st.write("####")
-            st.write("---------")
-    image_column, text_column = st.columns((2, 1))
-    with image_column:
-        st.image(jupiter_pic)
-        with text_column:
-            st.write("------")
-            st.subheader("Jupiter")
-            st.write(
+# ---- Jupiter ----
+with st.container():
+    st.write("####")
+st.write("---------")
+image_column, text_column = st.columns((2, 1))
+with image_column:
+    st.image(jupiter_pic)
+    with text_column:
+        st.write("------")
+        st.subheader("Jupiter")
+        st.write(
                 """ Jupiter is the fifth planet from the Sun and the largest in the Solar System.
                  It is a gas giant with a mass more than two and a half times that of all the other planets in the Solar System combined, and slightly less than one one-thousandth the mass of the Sun. It is orbiting the Sun at a distance of 5.20 AU (778.5 Gm) with an orbital period of 11.86 years. Jupiter is the third brightest natural object in the Earth's night sky after the Moon and Venus, and it has been observed since prehistoric times. It was named after Jupiter, the chief deity of ancient Roman religion.
 This was the first planet to form, and the inward migration of Jupiter during the primordial Solar System impacted much of the formation history of the other planets. Jupiter is primarily composed of hydrogen (90% by volume), followed by helium, which constitutes a quarter of its mass and a tenth of its volume. The ongoing contraction of Jupiter's interior generates more heat than the planet receives from the Sun.
@@ -541,19 +542,18 @@ Surface pressure:	200–600 kPa (30–90 psi)
 0.0006%±0.0002% ethane
 0.0004%±0.0004% water
             """
-           )
-
-   # ---- Saturn ----
-    with st.container():
-     st.write("####")
-     st.write("---------")
-image_column, text_column = st.columns((2, 1))
+)
+# ---- Saturn----
+with st.container():
+ st.write("####")
+ st.write("---------")
+ image_column, text_column = st.columns((2, 1))
 with image_column:
-     st.image(Saturn_pic)
-     with text_column:
-          st.write("------")
-          st.subheader("Saturn")
-          st.write(
+ st.image(Saturn_pic)
+with text_column:
+ st.write("------")
+st.subheader("Saturn")
+st.write(
                 """Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth. It has only one-eighth the average density of Earth, but is over 95 times more massive.
 Saturn's interior is thought to be composed of a rocky core, surrounded by a deep layer of metallic hydrogen, an intermediate layer of liquid hydrogen and liquid helium, and finally, a gaseous outer layer. Saturn has a pale yellow hue due to ammonia crystals in its upper atmosphere.
  An electrical current within the metallic hydrogen layer is thought to give rise to Saturn's planetary magnetic field, which is weaker than Earth's, but which has a magnetic moment 580 times that of Earth due to Saturn's larger size. The planet has a prominent ring system, which is composed mainly of ice particles, with a smaller amount of rocky debris and dust.
@@ -599,9 +599,9 @@ Icy volatiles: ammoniawater iceammonium hydrosulfide
             )
 
    # ---- Uranus ----
-     with st.container():
-      st.write("####")
-     st.write("---------")
+with st.container():
+ st.write("####")
+st.write("---------")
 image_column, text_column = st.columns((2, 1))
 with image_column:
      st.image(Uranus_pic)
