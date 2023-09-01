@@ -293,8 +293,7 @@ with image_column:
     st.image(Mercury_in_true_color)
     with text_column:
      st.write("------")
-        st.subheader("Mercury")
-         st.write("------")
+    
      st.subheader("Venus")
     st.write(
     """ Mercury is the first planet from the Sun and the smallest planet in the Solar System. It is a terrestrial planet with a heavily cratered surface due to the planet having no geological activity and an extremely tenuous atmosphere (called an exosphere).
