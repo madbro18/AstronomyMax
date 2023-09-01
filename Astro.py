@@ -15,7 +15,6 @@ def load_lottieurl(url):
 
 # ---- HEADER SECTION ----
 with st.container():
-with st.container():
     image_column, text_column = st.columns((15, 1))
     with image_column:
      st.image(AstronomyMax_pic)
