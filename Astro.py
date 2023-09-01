@@ -4,7 +4,9 @@ import streamlit as st
 from streamlit_lottie import st_lottie
 
 
-
+image_column, text_column  = st.columns((15,1))
+with image_column:
+    st.image(AstronomyMax_pic)
 # Find more emojis here: https://www.webfx.com/tools/emoji-cheat-sheet/
 st.set_page_config(page_title="Astronomy Max", page_icon="🪐", layout="wide")
 def load_lottieurl(url):
@@ -68,6 +70,7 @@ with st.container():
         the_sun_pic = Image.open("images/the_sun_pic.png")
         Solar_System_Scale = Image.open("images/Solar_System_scale.png")
         Solar_System_distance_to_scale = Image.open("images/Solar_System_distance_to_scale.png")
+        AstronomyMax_pic = Image.open("images/AstronomyMax_pic.png")
         def local_css(file_name):
             with open(file_name) as f:
                 st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
