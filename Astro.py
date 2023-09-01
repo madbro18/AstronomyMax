@@ -5,6 +5,7 @@ from streamlit_lottie import st_lottie
 
 
 # Find more emojis here: https://www.webfx.com/tools/emoji-cheat-sheet/
+AstronomyMax_pic = Image.open("images/AstronomyMax_pic.png")
 st.set_page_config(page_title="Astronomy Max", page_icon="🪐", layout="wide")
 def load_lottieurl(url):
     r = requests.get(url)
@@ -14,10 +15,12 @@ def load_lottieurl(url):
 
 # ---- HEADER SECTION ----
 with st.container():
-image_column, text_column  = st.columns((15,1))
-with image_column:
-    st.image(AstronomyMax_pic)
- st.subheader("Where Astronomy meets Fun and AI 🪐🤖")
+with st.container():
+    image_column, text_column = st.columns((15, 1))
+    with image_column:
+     st.image(AstronomyMax_pic)
+
+     st.subheader("Where Astronomy meets Fun and AI 🪐🤖")
 st.title("Astronomy Max")
 st.write("A Place For Learning About Space,Tech,Science With the help of AI👽👾")
 st.write("An MBA Original made by Burak Arslan")
@@ -69,7 +72,7 @@ with st.container():
         the_sun_pic = Image.open("images/the_sun_pic.png")
         Solar_System_Scale = Image.open("images/Solar_System_scale.png")
         Solar_System_distance_to_scale = Image.open("images/Solar_System_distance_to_scale.png")
-        AstronomyMax_pic = Image.open("images/AstronomyMax_pic.png")
+    
         def local_css(file_name):
             with open(file_name) as f:
                 st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
