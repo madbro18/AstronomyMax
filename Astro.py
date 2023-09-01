@@ -4,6 +4,7 @@ import streamlit as st
 from streamlit_lottie import st_lottie
 
 
+
 # Find more emojis here: https://www.webfx.com/tools/emoji-cheat-sheet/
 AstronomyMax_pic = Image.open("images/AstronomyMax_pic.png")
 st.set_page_config(page_title="Astronomy Max", page_icon="🪐", layout="wide")
