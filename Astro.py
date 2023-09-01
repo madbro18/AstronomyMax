@@ -284,6 +284,7 @@ st.title("Our Solar System")
 image_column, text_column  = st.columns((15,1))
 with image_column:
     st.image(img_planet_pic)
+    st.subheader("Mercury")
     # ---- Mercury ----
     with st.container():
         st.write("####")
