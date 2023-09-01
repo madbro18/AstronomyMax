@@ -4,9 +4,6 @@ import streamlit as st
 from streamlit_lottie import st_lottie
 
 
-image_column, text_column  = st.columns((15,1))
-with image_column:
-    st.image(AstronomyMax_pic)
 # Find more emojis here: https://www.webfx.com/tools/emoji-cheat-sheet/
 st.set_page_config(page_title="Astronomy Max", page_icon="🪐", layout="wide")
 def load_lottieurl(url):
@@ -17,7 +14,9 @@ def load_lottieurl(url):
 
 # ---- HEADER SECTION ----
 with st.container():
-
+image_column, text_column  = st.columns((15,1))
+with image_column:
+    st.image(AstronomyMax_pic)
  st.subheader("Where Astronomy meets Fun and AI 🪐🤖")
 st.title("Astronomy Max")
 st.write("A Place For Learning About Space,Tech,Science With the help of AI👽👾")
