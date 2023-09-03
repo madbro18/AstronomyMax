@@ -159,10 +159,10 @@ A SpaceX Falcon 9 rocket launched the Dragon spacecraft into orbit carrying NASA
  """
         )
         st.markdown("[Source➡](https://www.nasa.gov/press-release/nasa-s-spacex-crew-7-launches-to-international-space-station)")
- with st.container():
-        st.write("---")
-        image_column, text_column = st.columns((1, 2))
-        with image_column:
+        with st.container():
+         st.write("---")
+         image_column, text_column = st.columns((1, 2))
+         with image_column:
             st.image(india_mission)
     with text_column:
         st.subheader("From the moon to the sun: India launches next space mission")
