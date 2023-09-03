@@ -72,6 +72,7 @@ with st.container():
         the_sun_pic = Image.open("images/the_sun_pic.png")
         Solar_System_Scale = Image.open("images/Solar_System_scale.png")
         Solar_System_distance_to_scale = Image.open("images/Solar_System_distance_to_scale.png")
+        india_mission = Image.open("images/india_mission.png")
     
         def local_css(file_name):
             with open(file_name) as f:
@@ -158,7 +159,34 @@ A SpaceX Falcon 9 rocket launched the Dragon spacecraft into orbit carrying NASA
  """
         )
         st.markdown("[Source➡](https://www.nasa.gov/press-release/nasa-s-spacex-crew-7-launches-to-international-space-station)")
-
+ with st.container():
+        st.write("---")
+        image_column, text_column = st.columns((1, 2))
+        with image_column:
+            st.image(india_mission)
+    with text_column:
+        st.subheader("From the moon to the sun: India launches next space mission")
+        st.write(
+            """ Another incredible mission by India only days after their moon mission; The latest mission in India's ambitious space program blasted off Saturday September 2nd on a voyage towards the center of the solar system, a week after the country's successful unmanned moon landing.
+Aditya-L1 launched shortly before midday, with a live broadcast showing hundreds of spectators cheering wildly against the deafening noise of the rocket's ascent.
+"Launch successful, all normal," an Indian Space Research Organisation official announced from mission control as the vessel made its way to the upper reaches of the Earth's atmosphere.
+The mission is carrying scientific instruments to observe the sun's outermost layers in a four-month journey.
+The United States and the European Space Agency (ESA) have sent numerous probes to the center of the solar system, beginning with NASA's Pioneer program in the 1960s.
+Japan and China have both launched their own solar observatory missions into Earth's orbit.
+But if successful, the latest mission from the Indian Space Research Organisation (ISRO) will be the first by any Asian nation to be placed in orbit around the sun.
+"It's a challenging mission for India," astrophysicist Somak Raychaudhury told broadcaster NDTV on Friday.
+Raychaudhury said the mission probe would study coronal mass ejections, a periodic phenomenon that sees huge discharges of plasma and magnetic energy from the sun's atmosphere.
+These bursts are so powerful they can reach the Earth and potentially disrupt the operations of satellites.
+Aditya will help predict the phenomenon "and alert everybody so that satellites can shut down their power," he said.
+"It will also help us understand how these things happen, and in the future, we might not need a warning system out there."
+Aditya, the name of the Hindu Sun deity, will travel 1.5 million kilometers (930,000 miles) to reach its destination—still only one percent of the vast distance between Earth and the sun.
+At that point, the gravitational forces of both celestial bodies cancel each other out, allowing the mission to remain in a stable halo orbit around our nearest star.
+Aditya is traveling on the ISRO-designed, 320-ton PSLV XL rocket that has been a mainstay of the Indian space program, powering earlier launches to the moon and Mars.
+The mission also aims to shed light on the dynamics of several other solar phenomena by imaging and measuring particles in the sun's upper atmosphere.
+           
+ """
+        )
+        st.markdown("[Source➡](https://phys.org/news/2023-09-moon-sun-india-space-mission.html)")
 # ---- THEORIES ----
 with st.container():
  st.write("---")
